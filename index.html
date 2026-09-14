@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sorting Visualizer-By Sheikh Hajrat</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Sorting Visualizer</h1>
+        <p>Visualize popular sorting algorithms</p>
+    </header>
+
+
+    <!-- CONTROLS -->
+    <section class="controls">
+
+        <div class="control">
+            <label for="algorithm">
+                Algorithm
+            </label>
+
+            <select id="algorithm">
+
+                <option value="bubble">
+                    Bubble Sort
+                </option>
+
+                <option value="selection">
+                    Selection Sort
+                </option>
+
+                <option value="insertion">
+                    Insertion Sort
+                </option>
+
+                <option value="merge">
+                    Merge Sort
+                </option>
+
+                <option value="quick">
+                    Quick Sort
+                </option>
+
+                <option value="heap">
+                    Heap Sort
+                </option>
+
+            </select>
+        </div>
+
+
+        <div class="control">
+
+            <label for="size">
+                Array Size:
+                <span id="sizeValue">40</span>
+            </label>
+
+            <input type="range" id="size" min="10" max="100" value="40">
+
+        </div>
+
+
+        <div class="control">
+
+            <label for="speed">
+                Speed:
+                <span id="speedValue">50</span>
+            </label>
+
+            <input type="range" id="speed" min="1" max="100" value="50">
+
+        </div>
+
+
+        <button id="generateBtn">
+            Generate Array
+        </button>
+
+
+        <button id="sortBtn">
+            Start Sorting
+        </button>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+    <section class="statistics">
+
+        <div class="stat">
+            <span>Comparisons</span>
+            <strong id="comparisons">
+                0
+            </strong>
+        </div>
+
+
+        <div class="stat">
+            <span>Swaps</span>
+            <strong id="swaps">
+                0
+            </strong>
+        </div>
+
+
+        <div class="stat">
+            <span>Status</span>
+            <strong id="status">
+                Ready
+            </strong>
+        </div>
+
+    </section>
+
+
+    <!-- VISUALIZER -->
+    <main>
+
+        <div id="arrayContainer"></div>
+
+    </main>
+
+
+    <!-- LEGEND -->
+    <section class="legend">
+
+        <div>
+            <span class="legendBar normal"></span>
+            Unsorted
+        </div>
+
+        <div>
+            <span class="legendBar comparing"></span>
+            Comparing
+        </div>
+
+        <div>
+            <span class="legendBar swapping"></span>
+            Swapping
+        </div>
+
+        <div>
+            <span class="legendBar sorted"></span>
+            Sorted
+        </div>
+
+    </section>
+
+
+    <footer>
+        Sorting Visualizer By <a href="https://www.instagram.com/sheikh_hajrat10">Sheikh Hajrat</a>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
